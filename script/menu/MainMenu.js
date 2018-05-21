@@ -13,8 +13,8 @@ function generateMainMenuLabels(headerText){
             "100px"
         ),
         new Label(
-            "© 2018 Chen Shmilovich", 
-            new Vector2(1250,700),
+            "© 2018 Chen Shmilovich. Addasiad Cymraeg gan Carl Morris", 
+            new Vector2(1000,700),
             Vector2.zero,
             "white",
             "left",
@@ -92,7 +92,7 @@ function generateMainMenuButtons(inGame){
         sprites.backButton, 
         new Vector2(100,150),
         function(){
-            Game.mainMenu.labels = generateMainMenuLabels("Classic 8-Ball");
+            Game.mainMenu.labels = generateMainMenuLabels("Pŵl Cymru");
             Game.mainMenu.buttons = generateMainMenuButtons(inGame);
         },
         sprites.backButtonHover
@@ -119,7 +119,7 @@ function generateMainMenuButtons(inGame){
             sprites.onePlayersButton, 
             new Vector2(200,dev+400),
             function(){
-                Game.mainMenu.labels = generateMainMenuLabels("Choose Difficulty");
+                Game.mainMenu.labels = generateMainMenuLabels("Pa mor anodd?");
 
                 Mouse.reset();
                 Game.mainMenu.buttons = [
