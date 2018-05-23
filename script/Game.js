@@ -38,7 +38,7 @@ Game_Singleton.prototype.initialize = function () {
 
 Game_Singleton.prototype.initMenus = function(inGame){
 
-    let labels = generateMainMenuLabels("Classic 8-Ball");
+    let labels = generateMainMenuLabels("Pŵl Cymru");
 
     let buttons = generateMainMenuButtons(inGame);
 
@@ -52,7 +52,7 @@ Game_Singleton.prototype.initMenus = function(inGame){
 }
 
 Game_Singleton.prototype.loadSprite = function (imageName) {
-    console.log("Loading sprite: " + imageName);
+    console.log("Yn llwytho corlun: " + imageName);
     var image = new Image();
     image.src = imageName;
     this.spritesStillLoading += 1;
